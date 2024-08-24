@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div>
+                <input type="text" id="idInstance" placeholder="idInstance">
+                <input type="text" id="ApiTokenInstance" placeholder="ApiTokenInstance">
+            </div>
+           <div>
+            <button id="getSettings" onclick="getSettingsClicked()">getSettings</button>
+            <button onclick="getStateInstanceClicked()">getStateInstance</button>
+           </div>
+            <div class="box2">
+                <label>Phone number</label>
+                <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div>
+                <label>Message</label>
+                <input type="text" id="message">
+                <button onclick="sendMessageClicked()">Send Message</button>
+            </div>
+            <div>
+                <label>File URL</label>
+                <input type="text" id="file-url">
+                <label>File name</label>
+                <input type="text" id="file-name">
+                <button onclick="sendByUrlClicked()">Send File by URL</button>
+            </div>
+        </div>
+        <div class="inner-container">
+            <textarea id="display-results"></textarea>
+        </div>
+    </div>
+</body>
+</html>
